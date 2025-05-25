@@ -1,0 +1,45 @@
+.centered{
+    display:flex;
+    justify-content: center;
+}
+
+.header{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin: none;
+}
+
+form{
+    padding: 15px 0px;
+}
+
+body{
+    background-color:rgb(139, 137, 137);
+    margin: 0;
+}
+
+.topnav{
+    display:flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+
+.bg1{
+    background-color: darksalmon;
+}
+
+.topButton{
+    background-color: transparent;
+    box-shadow: none;
+    border:none;
+    font-size: medium;
+}
+
+.topButton:active{
+    font-weight:bold;
+}
+
+.checkBox:checked{
+    color: brown;
+    background-color: brown;
+}
