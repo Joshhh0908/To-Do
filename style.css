@@ -3,6 +3,14 @@
     justify-content: center;
 }
 
+.belowHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:fit-content;
+    margin: 0 auto;
+}
+
 .header{
     padding-top: 10px;
     padding-bottom: 15px;
@@ -10,6 +18,8 @@
 }
 
 form{
+    display: flex;
+    gap: 8px;
     padding: 15px 0px;
 }
 
@@ -20,8 +30,8 @@ body{
 
 .topnav{
     display:flex;
-    justify-content: space-evenly;
-    padding-bottom: 15px;
+    justify-content:space-around;
+    padding-bottom: none;
 }
 
 .bg1{
@@ -35,11 +45,47 @@ body{
     font-size: medium;
 }
 
-.topButton:active{
+.topButton:hover{
     font-weight:bold;
 }
 
-.checkBox:checked{
-    color: brown;
-    background-color: brown;
+#taskDate, #taskName, #addButton {
+  background-color:blanchedalmond;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-size: 16px;
+  line-height: 1.2;
+  height: 30px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+#addButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#taskDate:active, #taskName:active, #addButton:active{
+    accent-color: darkred;
+    color: darkred;  
+}
+.checkBox{
+    accent-color:darkred ;
+}
+
+th, td{
+    padding: 3px 15px;
+    text-align: left;
+    font-size: larger;
+}
+
+.selected{
+    background-color:bisque;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: none;
+    padding-bottom: none;
+    padding: 10px 30px;
 }

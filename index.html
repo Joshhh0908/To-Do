@@ -12,30 +12,30 @@
         <h1>TO-DO LIST</h1>
     </div>
     <div class="topnav bg1 centered">
-        <button class="topButton" id="all">All</button>
+        <button class="topButton selected" id="all">All</button>
         <button class="topButton" id="today">Today</button>
         <button class="topButton" id="completed">Completed</button>
 
     </div>
-    <div class="centered">
-        <form>
-            <input type="text" autocomplete="off" autofocus id="taskName">
-            <input type="date" id="taskDate">
-            <button type="submit" id="addButton">Add Task</button>
-        </form>
-    </div>
-    <div class="centered">
-        <table class="taskList" id="taskList">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Task</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+    <div class="belowHeader">
+        <div>
+            <form>
+                <input type="text" autocomplete="off" autofocus id="taskName">
+                <input type="date" id="taskDate">
+                <button type="submit" id="addButton">Add Task</button>
+            </form>
+            <table class="taskList" id="taskList">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Task</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

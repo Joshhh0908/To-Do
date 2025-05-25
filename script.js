@@ -20,6 +20,10 @@ document.querySelector('form').addEventListener('submit', (e)=> {
 
 document.querySelectorAll('.topButton').forEach(button => {
     button.addEventListener('click', (e) => {
+        document.querySelectorAll(".topButton").forEach(button => {
+            button.classList.remove('selected');
+        });
+        e.target.classList.add('selected')
         if (e.target.id === "all" ){
             display = tasks.filter(task=> !(task.completed));
         } else if(e.target.id === "completed"){
