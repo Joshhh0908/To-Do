@@ -3,6 +3,17 @@
     justify-content: center;
 }
 
+body.darkMode{
+    background-color: black;
+}
+
+body.darkMode{
+    color:antiquewhite;
+}
+
+body.darkMode .header, body.darkMode .topnav{
+    background-color: brown;
+}
 .belowHeader{
     display: flex;
     flex-direction: column;
@@ -12,9 +23,17 @@
 }
 
 .header{
+    display: flex;
     padding-top: 10px;
     padding-bottom: 15px;
     margin: none;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#header{
+    margin:0 auto;
+    text-align: center;
 }
 
 form{
@@ -88,4 +107,15 @@ th, td{
     margin-bottom: none;
     padding-bottom: none;
     padding: 10px 30px;
+}
+
+#darkModeButton{
+    display: inline-flex;
+    align-items: center;
+    background-color:aliceblue;
+    border: none;
+    border-radius: 10px;
+    line-height: 1;
+    padding: 15px 12px;
+    height: 2px;
 }

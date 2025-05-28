@@ -56,3 +56,7 @@ document.querySelector('#taskList').addEventListener('change', (e) => {
         console.log(tasks)
     };
 });
+
+document.getElementById('darkModeButton').addEventListener('click', ()=>{
+    document.body.classList.toggle('darkMode');
+})
